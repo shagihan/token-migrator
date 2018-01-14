@@ -37,7 +37,8 @@ public class TokenMigtrator {
      * @throws Exception When configs are wrong.
      */
     public static void main(String[] args) throws Exception {
-        Security.insertProviderAt(new BouncyCastleProvider(), 1);
+        //Security.insertProviderAt(new BouncyCastleProvider(), 1);
+        Security.addProvider(new BouncyCastleProvider());
         ConfigFileLoader configFileLoader = new ConfigFileLoader();
         List<MigrationConfig> migrationConfigsList = configFileLoader.getMigrationConfigList();
         DBConfigs databaseConfigs = configFileLoader.getDatabaseConfigs();

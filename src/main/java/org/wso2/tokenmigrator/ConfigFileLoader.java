@@ -48,7 +48,7 @@ public class ConfigFileLoader {
     public ConfigFileLoader() {
         migrationConfigs = new MigrationConfigs();
         try {
-            fXmlFile = new File(Constants.CONFIG_FILE_LOCATION);
+            fXmlFile = new File("resources/migration.xml");
             dbFactory = DocumentBuilderFactory.newInstance();
             dBuilder = dbFactory.newDocumentBuilder();
             document = dBuilder.parse(fXmlFile);
