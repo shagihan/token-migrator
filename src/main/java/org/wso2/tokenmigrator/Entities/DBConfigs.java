@@ -17,10 +17,33 @@
 
 package org.wso2.tokenmigrator.Entities;
 
+/**
+ * Entity file for database configurations.
+ */
 public class DBConfigs{
+
+    /**
+     * Database connection URL.
+     */
     public String url;
+
+    /**
+     * Database connection Username.
+     */
     public String username;
+
+    /**
+     * Database connection Password.
+     */
     public String password;
+
+    /**
+     * Database connection Driver.
+     */
     public String driverclass;
+
+    /**
+     * Connector JAR file location.
+     */
     public String jarlocation;
 }

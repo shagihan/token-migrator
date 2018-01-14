@@ -17,10 +17,30 @@
 
 package org.wso2.tokenmigrator.Entities;
 
+/**
+ * Token migration configuration.
+ */
 public class MigrationConfig
 {
+    /**
+     * Name of the table contains tokens.
+     */
     public String tableName;
+
+    /**
+     * Column of the table which specified above.
+     */
     public String columnName;
+
+    /**
+     * Encrypting algorithm which is going to encrypt.
+     * OPTIONAL : By default "RAS with padding".
+     */
     public String encryptionAlgorhythm;
+
+    /**
+     * Decryption algorithm which is going to decrypt.
+     * OPTIONAL : By default "RAS".
+     */
     public String decryptionAlgorhythm;
 }

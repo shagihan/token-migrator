@@ -19,11 +19,30 @@ package org.wso2.tokenmigrator.Entities;
 
 import java.util.List;
 
+/**
+ * Migration config entity.
+ * This will generate according to the configs.xml file.
+ */
 public class MigrationConfigs {
 
+    /**
+     * Location of userstore.jks file.
+     */
     public String userStoreLocation;
+
+    /**
+     * Password of user store.
+     */
     public String userStorePassword;
+
+    /**
+     * Database configs.
+     */
     public DBConfigs dbConfig;
+
+    /**
+     * List of migration configs.
+     */
     public List<MigrationConfig> migrationConfigList;
 }
 
