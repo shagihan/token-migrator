@@ -98,9 +98,9 @@ public class EncryptDecryptUtils {
      * @return dycripted key
      * @throws Exception when unable to decrypt
      */
-    public String decrypt(byte[] ciphertext, String decryptAlgorhythm) throws Exception {
+    public String decrypt(byte[] ciphertext, String decryptAlgorhythm,String alias, String password) throws Exception {
         PrivateKey privateKey = (PrivateKey) keyStore
-                .getKey("wso2carbon", "wso2carbon".toCharArray());
+                .getKey(alias, password.toCharArray());
         Cipher cipher;
         if (decryptAlgorhythm.isEmpty()) {
             cipher = Cipher.getInstance("RSA", "BC");
