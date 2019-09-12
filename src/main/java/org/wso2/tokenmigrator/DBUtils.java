@@ -110,7 +110,7 @@ public class DBUtils {
             return null;
         }
         String sql;
-        sql = "SELECT " + columnName + " FROM " + tableName;
+        sql = "SELECT * FROM " + tableName;
         try {
             return statement.executeQuery(sql);
         } catch (SQLException e) {

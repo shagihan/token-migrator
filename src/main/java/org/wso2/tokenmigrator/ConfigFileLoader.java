@@ -100,6 +100,8 @@ public class ConfigFileLoader {
                 migrationConfig.tableName = element.getElementsByTagName("tableName").item(0).getTextContent();
                 migrationConfig.decryptionAlgorhythm = element.getElementsByTagName("decryptAlgorhythm").item(0).getTextContent();
                 migrationConfig.encryptionAlgorhythm = element.getElementsByTagName("encryptAlgorhythm").item(0).getTextContent();
+                migrationConfig.alias = element.getElementsByTagName("alias").item(0).getTextContent();
+                migrationConfig.keyPass = element.getElementsByTagName("keyPass").item(0).getTextContent();
             }
             migrationConfigs.migrationConfigList.add(migrationConfig);
         }

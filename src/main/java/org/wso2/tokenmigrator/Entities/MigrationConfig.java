@@ -43,4 +43,8 @@ public class MigrationConfig
      * OPTIONAL : By default "RAS".
      */
     public String decryptionAlgorhythm;
+
+    public String alias;
+    public String keyPass;
+
 }
